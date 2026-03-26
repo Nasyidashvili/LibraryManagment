@@ -117,10 +117,10 @@ public class LibraryManager {
                         book.setAvailable(true);
                     }
                 }
+                saveBooks();
+                saveRecords();
+                return;
             }
-            saveBooks();
-            saveRecords();
-            return;
         }
         System.out.println("No active borrowing found for this book");
     }
